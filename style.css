@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap");
+
+h1 {
+    font-size: 50px;
+    font-family: "Source Code Pro Medium", monospace;
+    text-align: center;
+}
+
+body {
+    background: rgb(91, 72, 170);
+}
+
+a {
+    font-family: "Source Code Pro";
+    font-size: 20px;
+    color: black;
+}
+
+.animation {
+    animation-name: animation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 60px;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+@keyframes animation {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-300px); }
+    100% { transform: translateX(0); }
+}
